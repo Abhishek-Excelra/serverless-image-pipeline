@@ -1,0 +1,92 @@
+# root-level .gitignore for AWS_Mastery monorepo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Django
+/backend/db.sqlite3
+/backend/db.sqlite3-journal
+/backend/media/
+/backend/staticfiles/
+/backend/static/
+/backend/local_settings.py
+
+# Node
+/frontend/node_modules/
+/frontend/dist/
+/frontend/build/
+
+# Environment variables
+.env
+.env.local
+.env.production
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.spyderproject
+.spyproject
+.ropeproject
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Temporary
+.local/
+tmp/
+temp/
+
+# VSCode and other build artifacts
+*.log
+
+# IDE config overrides
+/frontend/.env
+/backend/.env
